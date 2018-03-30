@@ -1,6 +1,6 @@
 require('malta').checkDeps('epub-gen', 'markdown');
 
-var epub = require('epub-gen')
+var epub = require('epub-gen'),
 	markdown = require('markdown').markdown,
 	path = require('path'),
 	fs = require('fs');
