@@ -16,7 +16,7 @@ function malta_pug(o, options) {
         i = 0, l = data.content.length,
         contents = [];
 
-    fs.unlink(o.name);
+    fs.unlink(o.name, () => {});
 	
 	o.name = o.name.replace(/json$/, 'epub');
 
