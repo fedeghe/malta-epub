@@ -23,7 +23,7 @@
   "homepage": "https://github.com/fedeghe/malta-epub#readme",
   "dependencies": {
     "epub-gen": "0.0.20",
-    "malta": ">=3.8.3",
+    "malta": ">=3.8.14",
     "markdown": "^0.5.0"
   },
   "main": "./index.js"
