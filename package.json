@@ -1,30 +1,30 @@
 {
-  "name": "malta-epub",
-  "version": "1.0.6",
-  "description": "Malta plugin to create epub from markdown",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fedeghe/malta-epub.git"
-  },
-  "keywords": [
-    "malta",
-    "malta plugin",
-    "malta epub",
-    "malta epub plugin"
-  ],
-  "author": "Federico Ghedina <federico.ghedina@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fedeghe/malta-epub/issues"
-  },
-  "homepage": "https://github.com/fedeghe/malta-epub#readme",
-  "dependencies": {
-    "epub-gen": "0.0.20",
-    "malta": ">=3.8.14",
-    "markdown": "^0.5.0"
-  },
-  "main": "./index.js"
+    "name": "malta-epub",
+    "version": "1.0.6",
+    "description": "Malta plugin to create epub from markdown",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fedeghe/malta-epub.git"
+    },
+    "keywords": [
+        "malta",
+        "malta plugin",
+        "malta epub",
+        "malta epub plugin"
+    ],
+    "author": "Federico Ghedina <fedeghe@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/fedeghe/malta-epub/issues"
+    },
+    "homepage": "https://github.com/fedeghe/malta-epub#readme",
+    "dependencies": {
+        "epub-gen": "0.0.20",
+        "malta": ">=3.8.14",
+        "markdown": "^0.5.0"
+    },
+    "main": "./index.js"
 }
