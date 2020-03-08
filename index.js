@@ -1,20 +1,17 @@
-require('malta').checkDeps('epub-gen', 'markdown');
-
-var epub = require('epub-gen'),
+const epub = require('epub-gen'),
     markdown = require('markdown').markdown,
     path = require('path'),
     fs = require('fs');
 
 function malta_pug(o, options) {
-    var self = this,
+    const self = this,
         start = new Date(),
-        msg,
-        oldname = o.name,
         baseDir = path.dirname(self.tplPath),
         pluginName = path.basename(path.dirname(__filename)),
         data = JSON.parse(o.content),
-        i = 0, l = data.content.length,
-        contents = [];
+        l = data.content.length;
+
+    let msg, i = 0;
 
     fs.unlink(o.name, () => { });
 
@@ -29,12 +26,12 @@ function malta_pug(o, options) {
         }
     }
 
-    return function (solve, reject) {
-        new epub(data, o.name).promise.then(function () {
+    return (solve, reject) => {
+        new epub(data, o.name).promise.then(() => {
             msg = 'plugin ' + pluginName.white() + ' wrote ' + o.name + ' (' + self.getSize(o.name) + ')';
             solve(o);
             self.notifyAndUnlock(start, msg);
-        }, function (err) {
+        }, err => {
             reject(`Plugin ${pluginName} compilation error:\n${err}`);
             self.doErr(err, o, pluginNamee);
         });

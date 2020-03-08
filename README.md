@@ -1,6 +1,5 @@
 ---
 [![npm version](https://badge.fury.io/js/malta-epub.svg)](http://badge.fury.io/js/malta-epub)
-[![Dependencies](https://david-dm.org/fedeghe/malta-epub.svg)](https://david-dm.org/fedeghe/malta-epub)
 [![npm downloads](https://img.shields.io/npm/dt/malta-epub.svg)](https://npmjs.org/package/malta-epub)
 [![npm downloads](https://img.shields.io/npm/dm/malta-epub.svg)](https://npmjs.org/package/malta-epub)  
 ---  
